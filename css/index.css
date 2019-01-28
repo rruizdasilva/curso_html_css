@@ -73,9 +73,10 @@ header{
 }
 
 .boas-praticas{
-    position: absolute;
-    top: 0;
-    left: 47%;
+   position: absolute;
+   top: 0;
+   margin-left: auto;
+   margin-right: auto;
 }
 
 .saudacao p {
