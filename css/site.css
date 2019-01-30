@@ -7,7 +7,9 @@ body {
 
 h1,
 h2,
-.subtitulo-principal {
+.subtitulo-principal,
+.banner-twitter
+{
     font-family: "Open Sans Condensed", "Arial", sans-serif;
 }
 
