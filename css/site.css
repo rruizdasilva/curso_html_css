@@ -24,6 +24,7 @@ h1 {
     color: #FFF;
     padding: 2rem;
     border-bottom: .5rem solid #000;
+    text-shadow: 2px 2px #000;
 }
 
 .subtitulo-texto {
@@ -59,16 +60,18 @@ main p {
 }
 
 .rodape-pagina {
-    background-color: #000;
+    background-image: radial-gradient(ellipse at left bottom, rgba(60, 29, 61, 0.8) 65%,
+        black 65%,
+        black 70%,
+        transparent 70%);
+    width: 25%;
     color: #F2FFFC;
     padding: 1em;
     clear: both;
     position: fixed;
     bottom: 0;
     left: 0;
-    width: 100%;
-    box-sizing: border-box;
-}
+ }
 
 .container {
     width: 80ch;

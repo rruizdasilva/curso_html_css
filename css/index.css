@@ -1,3 +1,7 @@
+header h1{
+    text-shadow: 2px 2px #000;
+}
+
 header {
     position: relative;
 }
@@ -58,18 +62,21 @@ html, body{
     top: 50%;
     left: 60%;
     transform: translate(-50%, -50%) translateZ(4px) rotate(-5deg)  scale(0.25);
+    opacity: .3;
 }
 
 .codigo-limpo {
     top: 45%;
     left: 25%;
     transform: translate(-50%, -50%) translateZ(2px) rotate(-10deg) scale(0.25);
+    opacity: .6;
 }
 
 .css3 {
     top: 55%;
     left: 35%;
     transform: translate(-50%, -50%) translateZ(2px) rotate(5deg) scale(0.25);
+    opacity: .6;
 }
 
 .html5 {
@@ -82,42 +89,49 @@ html, body{
     top: 15%;
     left: 60%;
     transform: translate(-50%, -50%) translateZ(1px) rotate(-5deg) scale(0.25);
+    opacity: .3;
 }
 
 .acessibilidade {
     top: 30%;
     left: 35%;
     transform: translate(-50%, -50%) translateZ(3px) rotate(-5deg) scale(0.25);
+    opacity: .8;
 }
 
 .responsivo {
     top: 40%;
     left: 40%;
     transform: translate(-50%, -50%) translateZ(3px) rotate(10deg) scale(0.25);
+    opacity: .8;
 }
 
 .otimizacoes {
     top: 70%;
     left: 65%;
     transform: translate(-50%, -50%) translateZ(2px) rotate(-5deg) scale(0.25);
+    opacity: .6;
 }
 
 .agilidade {
     top: 75%;
     left: 35%;
     transform: translate(-50%, -50%)translateZ(1px) rotate(5deg)  scale(0.25);
+    opacity: .3;
 }
 
 .design {
     top: 40%;
     left: 60%;
     transform: translate(-50%, -50%) translateZ(2px) rotate(10deg) scale(0.25);
+    opacity: .6;
 }
 
 .boas-praticas {
     top: 0;
     left: 50%;
     transform: translate(-50%, -50%) translateZ(-0.5px) scale(0.25);
+    opacity: .3;
 }
 
 .saudacao p {
@@ -169,6 +183,7 @@ html, body{
     font-size: 3em;
     text-transform: uppercase;
     margin-bottom: .5em;
+    text-shadow: 2px 2px #000;
 }
 
 .trabalhos {
