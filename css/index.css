@@ -190,6 +190,11 @@ html, body{
     background-color: #3C1D3D;
     border-top: .5em solid #000;
     border-bottom: .5em solid #000;
+    background-image: linear-gradient(135deg, transparent, transparent 14px, rgba(0,0,0,.1) 14px, rgba(0,0,0,.1) 15px,
+            transparent 15px, transparent);
+    background-size: 20px 20px;
+    background-attachment: fixed;
+
 }
 
 .trabalhos h2 {
@@ -216,6 +221,10 @@ html, body{
     background-color: #999;
     color: #FFF;
     border-bottom: .5em solid #851944;
+    background-image: linear-gradient(135deg, transparent, transparent 14px, rgba(255,255,255,.1) 14px,
+            rgba(255,255,255,.1) 15px, transparent 15px, transparent);
+    background-size: 20px 20px;
+    background-attachment: fixed;
 }
 
 .blog small {
@@ -253,10 +262,6 @@ main {
     float: none;
 }
 
-.mais-recente {
-    background-color: #F2FFFC;
-}
-
 .inicio-post {
     position: absolute;
     top: 4em;
@@ -266,8 +271,16 @@ main {
     background-color: #F2FFFC;
     color: #000;
     padding: 1.5em;
+    display: none;
 }
 
-.mais-recente a {
+.ultimos-posts a:hover + .inicio-post,
+.ultimos-posts a:focus + .inicio-post{
+    display: block;
+}
+
+.ultimos-posts a:hover,
+.ultimos-posts a:focus{
+    background-color: #F2FFFC;
     color: #F26;
 }
