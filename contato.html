@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>João da Silva - Contato</title>
+    <link rel="icon" href="imagens/favicon.png">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/site.css">
+    <link rel="stylesheet" href="css/contato.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Crimson+Text:400,400italic,600">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700">
+</head>
+<body>
+    <main>
+        <h1 class="titulo-principal">Contato</h1>
+        <form>
+            <fieldset>
+                <legend>Dados pessoais</legend>
+                <label for="nome">Nome:</label>
+                <input id="nome" name="nome-contato" placeholder="Seu nome aqui" autofocus required>
+                <label for="email">Email:</label>
+                <input id="email" name="email-contato" placeholder="seu@email.com" type="email" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Assunto:</legend>
+                <label>
+                    <input type="radio" name="assunto" value="blog">
+                    Blog
+                </label>
+
+                <label>
+                    <input type="radio" name="assunto" value="servico">
+                    Serviço
+                </label>
+
+                <fieldset>
+                    <label>
+                        <input type="radio" name="assunto" value="outro">
+                        Outro
+                    </label>
+                    <input type="text" name="outro-assunto">
+                </fieldset>
+                <label for "msg">Mensagem:</label>
+                <textarea id="msg" name="mensagem" cols="30" rows="6" placeholder="Digite aqui sua mensagem"></textarea>
+                <button type="submit">Enviar <strong>para mim</strong></button>
+            </fieldset>
+        </form>
+    </main>
+
+    <footer class="rodape-pagina">
+        &copy; João da Silva 2014
+    </footer>
+</body>
+</html>

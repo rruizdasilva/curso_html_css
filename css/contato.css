@@ -1,0 +1,63 @@
+main {
+    width: 100%;
+    padding-bottom: 4em;
+}
+
+legend,
+label[for="msg"]{
+    font-weight: bold;
+    padding-top: 1em;
+}
+
+label[for]{
+    display: block;
+}
+
+input[type="text"],
+input[type="email"],
+textarea{
+    font-family: inherit;
+    font-size: 100%;
+    padding: .25em .25em;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #E6E7E8;
+}
+
+fieldset > fieldset {
+    display: inline;
+}
+
+fieldset option{
+    display: inline;
+}
+
+input[name="outro-assunto"]{
+    width: auto;
+    display: inline;
+}
+
+input:focus, textarea:focus{
+    background-color: #FFD;
+}
+
+input:invalid{
+    box-shadow: 0 0 3px red ;
+}
+
+.botao-submit{
+    float: right;
+    margin-top: 1em;
+    margin-left: auto;
+    border: 0;
+    background-color: #3C1D3D;
+    font-size: 1.2em;
+    font-family: "Open Sans Condensed", "Arial", sans-serif;
+    padding: 0.8em;
+    color: #FFFFFF;
+    display: block;
+}
+
+.botao-submit:hover, .botao-submit:focus{
+    background-color: #8C1D3D;
+}

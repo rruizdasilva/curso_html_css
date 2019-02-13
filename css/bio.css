@@ -42,3 +42,19 @@
     z-index: 9999;
     transform: scale(1.2) rotateZ(5deg);
 }
+
+.container > p::first-letter{
+    font-size: 2em;
+}
+
+.citacao-bio::before{
+    content: '“';
+    font-size: 10em;
+    color: #bbbbbb;
+    position: absolute;
+    line-height: .8;
+}
+
+.citacao-bio > p{
+    position: relative;
+}
