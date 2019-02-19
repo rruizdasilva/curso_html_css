@@ -31,6 +31,14 @@ body{
     font-color: #D5447E;
     font-size: 400%;
     position: absolute;
+    animation: aparece 2s;
+}
+
+@keyframes aparece {
+    0%{
+        opacity: 0;
+        transform: scale(0.001);
+    }
 }
 
 .banner-twitter{
@@ -50,8 +58,13 @@ body{
     top: 0%;
     right: 0%;
     transform-origin: 0 0;
-    transform: translate(6.5754em, -2.4749em) rotate(45deg);
+    transform: translate(calc(.707 * (3.5em - 100%) + 100%), calc(-.707 * 3.5em)) rotate(45deg);
+    animation: aparece 0.5s;
+    animation-delay: 2s;
+    animation-fill-mode: backwards;
 }
+
+
 
 html, body{
     height: 100%;
@@ -173,6 +186,8 @@ html, body{
     margin: 2em auto;
     display: block;
     text-align: center;
+    transition: .5s;
+    text-decoration: none;
 }
 
 .secao-inicio {
@@ -202,13 +217,32 @@ html, body{
 }
 
 .trabalhos ul {
-    overflow: hidden;
-    border: .5em solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
 }
 
 .trabalhos li {
-    float: left;
-    width: 33.333%;
+    border: .5em solid black;
+    flex: 1;
+}
+
+.trabalhos li:first-child{
+    order: 2;
+    transform: scale(1.2);
+}
+
+.trabalhos li:nth-child(2){
+    order: 1;
+}
+
+.trabalhos li:nth-child(3){
+    order: 3;
+}
+
+.trabalhos li:last-child{
+    order: 4;
 }
 
 .trabalhos img {
@@ -274,13 +308,37 @@ main {
     display: none;
 }
 
-.ultimos-posts a:hover + .inicio-post,
-.ultimos-posts a:focus + .inicio-post{
+.blog a:hover + .inicio-post,
+.blog a:focus + .inicio-post{
     display: block;
 }
 
-.ultimos-posts a:hover,
-.ultimos-posts a:focus{
-    background-color: #F2FFFC;
-    color: #F26;
+.botao-index:focus,
+.botao-index:hover{
+    background-color: #C54974;
+    color: white;
+    box-shadow: 0 0 1em #FA9;
 }
+
+.saudacao em{
+    animation: flutua 1s infinite;
+    position: relative;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes flutua {
+    from {
+        top: -5px
+    }
+    to{
+        top: 5px;
+    }
+
+}
+
+.saudacao em:hover
+{
+    animation-play-state: paused;
+}
+
