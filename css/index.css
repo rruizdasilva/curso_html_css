@@ -28,7 +28,7 @@ body{
 .palavra-home {
     font-family: "Shadows Into Light", cursive;
     font-weight: bold;
-    font-color: #D5447E;
+    font-color: #d5447e;
     font-size: 400%;
     position: absolute;
     animation: aparece 2s;
@@ -55,8 +55,8 @@ body{
     font-size: 1.2em;
 
     position: absolute;
-    top: 0%;
-    right: 0%;
+    top: 0;
+    right: 0;
     transform-origin: 0 0;
     transform: translate(calc(.707 * (3.5em - 100%) + 100%), calc(-.707 * 3.5em)) rotate(45deg);
     animation: aparece 0.5s;
@@ -220,7 +220,7 @@ html, body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-   
+
 }
 
 .trabalhos li {

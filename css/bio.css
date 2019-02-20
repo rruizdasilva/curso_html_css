@@ -37,7 +37,7 @@
 .citacao-bio:nth-of-type(even):hover,
 .citacao-bio:nth-of-type(even):focus{
     position: relative;
-    box-shadow: 0px 0px 0px 9999px rgba(0, 0, 0, 0.75);
+    box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.75);
     z-index: 9999;
     transform: scale(1.2) rotateZ(-5deg);
 }
@@ -45,7 +45,7 @@
 .citacao-bio:nth-of-type(odd):hover,
 .citacao-bio:nth-of-type(odd):focus{
     position: relative;
-    box-shadow: 0px 0px 0px 9999px rgba(0, 0, 0, 0.75);
+    box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.75);
     z-index: 9999;
     transform: scale(1.2) rotateZ(5deg);
 }
@@ -103,4 +103,9 @@ table [colspan]{
 
 table [rowspan]{
     vertical-align: middle;
+}
+
+body{
+    display: flex;
+    flex-wrap: wrap;
 }
